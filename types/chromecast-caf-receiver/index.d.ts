@@ -48,8 +48,8 @@ export namespace cast {
 
 declare global {
     const cast: {
-        debug: typeof debug;
-        framework: typeof framework;
+        debug: typeof debugNs;
+        framework: typeof frameworkNs;
     };
 
     type EventHandler = (event: Event) => void;
