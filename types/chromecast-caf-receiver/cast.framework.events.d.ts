@@ -451,7 +451,7 @@ export class ErrorEvent extends Event {
     /**
      * Optional error reason.
      */
-    reason?: cast.framework.messages.ErrorReason;
+    reason?: ErrorReason;
 }
 
 /**
