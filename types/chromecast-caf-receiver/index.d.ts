@@ -46,6 +46,8 @@ export namespace cast {
     const framework: typeof frameworkNs;
 }
 
+export { debugNs as debug, frameworkNs as framework };
+
 declare global {
     const cast: {
         debug: typeof debugNs;
