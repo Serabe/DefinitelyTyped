@@ -41,7 +41,7 @@ import {
     LiveStatusEvent,
 } from './cast.framework.events';
 
-declare namespace cast {
+export namespace cast {
     const debug: typeof debugNs;
     const framework: typeof frameworkNs;
 }
