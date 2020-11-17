@@ -1,4 +1,11 @@
-import { RequestData, MediaInformation, Track, MediaStatus, LiveSeekableRange } from './cast.framework.messages';
+import {
+    RequestData,
+    ErrorReason,
+    MediaInformation,
+    Track,
+    MediaStatus,
+    LiveSeekableRange,
+} from './cast.framework.messages';
 import * as category from './cast.framework.events.category';
 
 export import category = category;
@@ -429,7 +436,7 @@ export class BitrateChangedEvent extends Event {
  * Event data for @see{@link EventType.ERROR} event.
  */
 export class ErrorEvent extends Event {
-    constructor(detailedErrorCode?: DetailedErrorCode, error?: any, reason?: cast.framework.messages.ErrorReason);
+    constructor(detailedErrorCode?: DetailedErrorCode, error?: any, reason?: ErrorReason);
 
     /**
      * An error code representing the cause of the error.
