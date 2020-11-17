@@ -41,7 +41,6 @@ import {
     LiveStatusEvent,
 } from './cast.framework.events';
 
-export as namespace cast;
 export { debug, framework };
 
 declare global {
